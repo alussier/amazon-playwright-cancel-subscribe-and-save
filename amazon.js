@@ -22,6 +22,7 @@ const fs = require('fs');
   // Navigate to a website
   await page.goto('https://www.amazon.com/');
 
+  // Login manually here if not already logged in
   await page.waitForSelector('text=Hello, Adam');
 
   // Save cookies after successful login
